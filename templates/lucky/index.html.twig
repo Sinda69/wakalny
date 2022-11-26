@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakelni ! | Best services for the best clients</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link   rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" s />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{asset("style_azra9.css")}}" type="text/css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Wakelni ! </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+
+    <a href="{{path('app_account')}}"> <div class="fas fa-user" id="login-btn" ></div> </a>
+     </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{{asset("image/cart-img-1.png")}}" alt="">
+            <div class="content">
+                <h3>chocolate cake</h3>
+                <span class="price">3dt</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{{asset("image/cart-img-2.png")}}" alt="">
+            <div class="content">
+                <h3>capucchino</h3>
+                <span class="price">8dt</span>
+                <span class="quantity">qty : 3</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{{asset("image/cart-img-3.png")}}" alt="">
+            <div class="content">
+                <h3>sandwish</h3>
+                <span class="price">7dt</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : 18dt </div>
+        <!-- nzydo page flous-->
+        <a href="{{path('app_paiement')}}" class="btn">checkout</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home" style="background-image: url('{{asset('image/tt3.jpg')}}');">
+
+    <div class="content">
+        <h2><span>hungry ?</span></h2>
+        <p> eat now from everywhere you want with the best price</p>
+        <a href="#products" class="btn">choose now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{{asset("image/feature-img-1.png")}}" alt="">
+            <h3>best price</h3>
+            <p>we assure the ideal price</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="{{asset("image/feature-img-2.png")}}" alt="">
+            <h3>fast delivery</h3>
+            <p>we deliever to everywhere you want</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="{{asset("image/feature-img-3.png")}}" alt="">
+            <h3>easy payments</h3>
+            <p>as u like</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-1.png")}}" alt="">
+                <h3>hamburger</h3>
+                <div class="price"> burger king </div>
+                <div class="price"> 3.500dt </div>
+          <!--      <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div> -->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-2.png")}}" alt="">
+                <h3>shrimp pasta</h3>
+                <div class="price"> subway </div>
+                <div class="price"> 2dt </div>
+           <!--     <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div> -->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-3.png")}}" alt="">
+                <h3>pizza</h3>
+                <div class="price"> pasta's house </div>
+                <div class="price"> 12dt </div>
+            <!--    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>-->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-4.png")}}" alt="">
+                <h3>cordan bleu</h3>
+                <div class="price"> in&out </div>
+                <div class="price"> 4.250dt </div>
+           <!--     <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>-->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-5.png")}}" alt="">
+                <h3>french fries</h3>
+                <div class="price"> mc donalds </div>
+                <div class="price"> 2.870dt </div>
+         <!--       <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>-->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-6.png")}}" alt="">
+                <h3>mac&cheese</h3>
+                <div class="price"> pasta cosi </div>
+                <div class="price"> 8dt </div>
+          <!--      <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>-->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-7.png")}}" alt="">
+                <h3>meat plate</h3>
+                <div class="price"> andrew tate </div>
+                <div class="price"> 5.250dt </div>
+           <!--     <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div> -->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/product-8.png")}}" alt="">
+                <h3>shushi</h3>
+                <div class="price"> naruto </div>
+                <div class="price"> 1.800dt </div>
+            <!--    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div> -->
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{{asset("image/cat-1.png")}}" alt="">
+            <h3>dessert</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{{asset("image/cat-2.png")}}" alt="">
+            <h3>fast food</h3>
+            <p>upto 60% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{{asset("image/cat-4.png")}}" alt="">
+            <h3>healthy food</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/pic-1.png")}}" alt="">
+                <p>I am so grateful it made my life easier</p>
+                <h3>hama</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/pic-2.png")}}" alt="">
+                <p>Amazing service with a wonderful quality</p>
+                <h3>Salma</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/pic-3.png")}}" alt="">
+                <p>Guys you should upgrade your service</p>
+                <h3>aziz</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{asset("image/pic-4.png")}}" alt="">
+                <p>Good job guys keep it up!</p>
+                <h3>sinda</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{{asset("image/perso2.jfif")}}" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by sinda </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 9th may, 2022 </a>
+                </div>
+                <h3>fresh fruits</h3>
+                <p>today i tested the quality of the food , it was even better than the supermarkets' fruits </p>
+                <a href="#" class="btn">Hope you like our services</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{asset("image/perso4.jpg")}}" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by hama </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 7th april, 2021 </a>
+                </div>
+                <h3>delivery</h3>
+                <p>the service is wonderful i get my groceries faster than my mail</p>
+                <a href="#" class="btn">Trying to make you happy</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{asset("image/perso1.jpg")}}" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by nacer </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>my experience</h3>
+                <p>first i doupt it but now i cant imagine my life withtout it</p>
+                <a href="#" class="btn">Always here for you</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+<h1 class="heading"> CONTACT <span>US</span> </h1>
+   <section class="contact" id="contact">
+    
+
+   
+	<div class='container'>
+	
+		<div class='wrapper animated bounceInLeft'>
+			<div class='company-info'>
+ <div class="content">
+        <h1 class="typedtext" align="center"></h1>
+          <div id="panel" class="panel-container">
+      <strong>How satisfied are you with our <br/>
+      customer support performance?</strong>
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="https://i.ibb.co/fYN2rVn/no.png" alt="">
+          <small>Unhappy</small>
+        </div>
+
+        <div class="rating">
+          <img src="https://i.ibb.co/3M8Ddsf/neutral.png" alt=""/>
+          <small>Neutral</small>
+        </div>
+
+        <div class="rating active">
+          <img src="https://i.ibb.co/VVDYGLZ/yes.png" alt=""/>
+          <small>Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Send Review</button>
+    </div>
+    </div>
+   
+		</div>
+		<div class='contact'>
+			<h3>Email Us</h3>
+			<form method="post" action="contact.php">
+				<p>
+					<label>First Name</label>
+					<input type="text" name='First_name' required> 
+				</p>
+
+				<p>
+					<label>Last Name</label>
+					<input type="text" name='Last_name' required> 
+				</p>
+
+				<p>
+					<label>Email Adress</label>
+					<input type="email" name='email' required> 
+				</p>
+
+				<p>
+					<label>Phone Number</label>
+					<input type="text" name='phone' required> 
+				</p>
+
+				<p class='full'>
+					<label>Message</label>
+					<textarea name="message" rows="5" required ></textarea> 
+				</p>
+
+				<p class='full'>
+					<button>Submit</button>
+				</p>
+			</form>
+		</div>
+	</div>
+	
+       </div>
+       
+    </div>
+	
+    </section>
+    
+   
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Wakelni ! <i class="fas fa-shopping-basket"></i> </h3>
+            <p>you can now buy groceries from your home</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#contact-us" class="links"> <i class="fas fa-phone"></i> +52330219 </a>
+            <a href="#contact-us" class="links"> <i class="fas fa-phone"></i> +21938873 </a>
+            <a href = "mailto: seblaouimedaziz@gmail.com" class="links"> <i class="fas fa-envelope"></i> seblaouimedaziz@gmail.com </a>
+            <a href = "mailto: sinda.6969@gmail.com" class="links"> <i class="fas fa-envelope"></i> sinda.6969@gmail.com </a>
+            <a href="#=" class="links"> <i class="fas fa-map-marker-alt"></i> manouba </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#categories" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+    </section>
+     
+    <section class="footer">
+
+    <div class="credit"> created by <span> sinda kefi | mouhamed aziz seblaoui </span></div>
+
+</section>
+
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{asset("script.js")}}"></script>
+</body>
+</html>

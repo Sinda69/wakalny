@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  />
+    <link rel="stylesheet" href="{{asset("acc_style.css")}}" type="text/css" />
+    <title>Sliding Sign In & Sign Up Form</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form method="post" action="signup.php">
+          <h1>Sign Up</h1>
+           <input type="text" placeholder="Name" name="name" required/>
+          <input type="email" placeholder="Email" name="email" required/>
+          <input type="password" placeholder="Password" name="pass" required/>
+          <input type="password" placeholder="confirm your Password" name="cpass" required/>
+          <button >Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form method="post" action="signin.php">
+          <h1>Sign In</h1>
+          <input type="email" placeholder="Email" name="mail" required/>
+          <input type="password" placeholder="Password" name="mdp" required/>
+           <button >Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>Please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start your journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="{{asset("acc_script.js")}}"></script>
+  </body>
+</html>

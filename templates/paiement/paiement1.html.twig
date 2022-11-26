@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <title> pay</title>
+    <link rel ="stylesheet" href="{{asset("pay_style.css")}}" type="text/css">
+    <script src="{{asset("pay_script.js")}}"></script>
+    </head>
+    <body>
+
+        <section class="categories" id="categories">        
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="image/cart-img-3.png" alt="">
+                    <h3>Chicken</h3>
+                    <p>qte 3</p>
+                    <p>price : 12.5dt</p>
+                    <a href="#" class="btn">remove</a>
+                </div>
+        
+                <div class="box">
+                    <img src="image/cart-img-2.png" alt="">
+                    <h3>Onion</h3>
+                    <p>qte 3</p>
+                    <p>price : 5dt</p>
+                    <a href="#" class="btn">remove</a>
+                </div>
+        
+                <div class="box">
+                    <img src="image/cart-img-1.png" alt="">
+                    <h3>watermelon</h3>
+                    <p>qte 3</p>
+                    <p>price : 15dt</p>
+                    <a href="#" class="btn">remove</a>
+                </div>
+        
+            </div>
+        
+        </section>
+
+<div class="total"> total : 32.5dt </div>
+
+    <!--thank you popup-->
+    <div class="container">
+       <button class="btn-send" onclick="show()">pay now</button>
+       <div class="card" id="pop">
+          <img src="image/az.png">
+          <h2>thank you </h2>
+          <p>thank you for your trust ! your order will be delievered soon </p>
+           <button class="btn-close" onclick="hide()">dismiss</button>
+       </div>
+    </div>
+    
+    </body>
+    </html>
