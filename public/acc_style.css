@@ -10,6 +10,7 @@
 }
 * {
   box-sizing: border-box;
+  
 }
 body {
   background: #f6f5f7;
@@ -96,6 +97,7 @@ button.ghost:hover {
   position: absolute;
   top: 0;
   width: 100%;
+  overflow-y: auto;
   transition: all 0.6s ease-in-out;
 }.sign-in-container {
   top: 0;

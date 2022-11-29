@@ -13,23 +13,28 @@
   <body>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
+       <form method="post">
       {{ form_start(registrationForm) }}
-        <form method="post" action="signup.php">
           <h1>Sign Up</h1>
-           <input type="text" placeholder="Name" name="name" required/>
-          <input type="email" placeholder="Email" name="email" required/>
+          
+             {{ form_row(registrationForm.Name) }}
+         <!-- <input type="email" placeholder="Email" name="email" required/><!--hedhy tbadalha div w bdl css-->
+         
           {{ form_row(registrationForm.email) }}
-          <input type="password" placeholder="Password" name="pass" required/>
-          {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-          <input type="password" placeholder="confirm your Password" name="cpass" required/>
+          <!--<input type="password" placeholder="Password" name="pass" required/>-->
+          {{ form_row(registrationForm.plainPassword, {label: 'Password'}) }}
+          
           <button >Sign Up</button>
            {{ form_end(registrationForm) }}
         </form>
       </div>
+
+
+              <!--  hedha sign in       -->
+
+
       <div class="form-container sign-in-container">
-        <form method="post" action="signin.php">
+        <form method="post">
           <h1>Sign In</h1>
           <input type="email" placeholder="Email" value="{{ last_username }}" name="mail" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
           <input type="password"  placeholder="Password" name="mdp" id="inputPassword" class="form-control" autocomplete="current-password" required>      
