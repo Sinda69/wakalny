@@ -1,28 +1,25 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-		<link rel= "stylesheet" href="profile.css">
+        <title>profile</title>
+		<link rel= "stylesheet" href="{{asset("profile.css")}}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     </head>
     <body>
 		<div class="profile">
-  
 			<div class="profile-banner">
-			  
 			</div>
 			<div class="profile-picture">
-			
 			  <a href="" class="add-frnd">Edit profile <span class="entypo-user"></span></a>
 			  <a href="" class="follow">Post <span class="entypo-plus"></span></a>
-			  
 			  <a href=""><img src="{{asset("image/profilepic.jpg")}}"></a>
-			  <span>Daniel Jack</span>
-			  <br>
-			  <small>(Jack Daniel)</small>
+			  <span>{{app.user.name}}
+			  {{ app.user.userIdentifier }}
+			  </span>
+		
 			</div>
 			
 			<div class="profile-content">
@@ -51,7 +48,9 @@
 				<div class="content-md-middle">
 				  
 				  <div class="post-title-name">
-					<a href="">Daniel Jack</a><br>
+					{{app.user.name}}
+			        {{app.user.email}}
+
 				  </div>
 				  
 				  <div class="post-title-time">
@@ -59,9 +58,9 @@
 				  </div>
 				  
 				   <div class="post-desc">
-				  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie eleifend orci non varius. Integer et mauris quis neque blandit sagittis.
+				    <p>  test test 105</p>
 					 <br>
-					 <a href=""><img src="{{asset("image/pizzacover.jpg")}}"></a>
+					 <img src='{{asset("image/pizzacover.jpg")}}'>
 					 
 				  </div>
 				  

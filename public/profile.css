@@ -9,10 +9,21 @@
 *{
   font-family:"Open Sans condensed";
 }
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../image/tt3.jpg) no-repeat;
+  background-image: url('public/image/pizzacover.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+}
 
 .profile{
-  height:1200px;
-  width:1000px;
+  height:100px;
+  width:50px;
   margin:0 auto;
   border-radius:10px;
 }
@@ -20,14 +31,12 @@
 .profile-banner{
   height:40%;
   width:100%;
-  background-image:url('{{asset("image/cover.jpg")}}');
-  background-size:100%;
   border-radius:10px;
 }
 
 .profile-picture{
-  height:150px;
-  width:150px;
+  height:50px;
+  width:50px;
   border-radius:50%;
   margin: 0 auto;
   position:relative;
