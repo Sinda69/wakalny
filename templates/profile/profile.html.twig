@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     </head>
     <body>
+
+
 		<div class="profile">
 			<div class="profile-banner">
 			</div>
@@ -16,8 +18,16 @@
 			  <a href="" class="add-frnd">Edit profile <span class="entypo-user"></span></a>
 			  <a href="" class="follow">Post <span class="entypo-plus"></span></a>
 			  <a href=""><img src="{{asset("image/profilepic.jpg")}}"></a>
-			  <span>{{app.user.name}}
-			  {{ app.user.userIdentifier }}
+			  	<!-- 
+	aaaaaaaaaaaaa test 
+	
+	hedha fyh button log out w button acceuil
+	-->
+			  	<button><a href='{{path("app_logout")}}'> logout </a></button>
+			  	<button><a href='{{path("app_index")}}'> acceuil </a></button>
+
+			  <span>{{app.user.name}} <!-- hedha nom l user -->
+			  {{ app.user.userIdentifier }} <!-- hedha mail l user -->
 			  </span>
 		
 			</div>
