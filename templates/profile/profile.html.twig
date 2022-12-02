@@ -6,109 +6,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>profile</title>
 		<link rel= "stylesheet" href="{{asset("profile.css")}}">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     </head>
     <body>
+	   <nav>
+            <div class="nav-left">
+               <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Wakelni ! </a>
+                  <ul>
+                     <li><a href='{{path("app_logout")}}'><i class="fas fa-power-off"></i>Log out</a></li>
+                     <li><a href='{{path("app_index")}}'><i class="fa fa-home"></i>Home</a></li>
+                  </ul>
+            </div>   
+			<div class="nav-right">
+			    <div class="name">
+				   {{app.user.name}}
+				</div>
+			    <div class="nav-user-icon">
+                    <img src="{{asset("image/profilepicpic.jpg")}}">
+                </div>
+			</div>                                              I
+       </nav>
+	   <div class="container">
+            <div class="photo"></div>
+            <div class="banner"></div>
+            <ul>
+                <li><b>{{app.user.name}}</b></li>
+                <li>{{app.user.email}}</li>
 
-
-		<div class="profile">
-			<div class="profile-banner">
-			</div>
-			<div class="profile-picture">
-			  <a href="" class="add-frnd">Edit profile <span class="entypo-user"></span></a>
-			  <a href="" class="follow">Post <span class="entypo-plus"></span></a>
-			  <a href=""><img src="{{asset("image/profilepic.jpg")}}"></a>
-			  	<!-- 
-	aaaaaaaaaaaaa test 
+            </ul>
+            <button class="contact" id="main-button">click here to post</button>
+            <div class="social-media-banner">
+			    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          <form class="email-form">
+                <textarea id="desc" type="text" placeholder="Description"></textarea>
+                <label for="pic">Choose a picture:</label>
+                <input type="file" id="pic" name="pic" accept="image/png, image/jpeg">
+                <button class="post">Post</button>
+          </form>
+	   </div>
+			
 	
-	hedha fyh button log out w button acceuil
-	-->
-			  	<button><a href='{{path("app_logout")}}'> logout </a></button>
-			  	<button><a href='{{path("app_index")}}'> acceuil </a></button>
-
-			  <span>{{app.user.name}} <!-- hedha nom l user -->
-			  {{ app.user.userIdentifier }} <!-- hedha mail l user -->
-			  </span>
-		
-			</div>
-			
-			<div class="profile-content">
-			
-			  <div class="content-left">
-			  
-				<ul>
-				  
-				  <li><a><span class="entypo-compass"></span> USA, California</a></li>
-				  <li><a><span class="entypo-graduation-cap "></span> California College of the Arts </a></li>
-				  <li><a><span class="entypo-suitcase"></span> Graphic Designer at Wicrosoft</a></li>
-				  <li><a><span class="entypo-lock-open"></span> Public</a></li>
-		  
-				</ul>
-				
-			  </div>
-			  
-			  <div class="content-middle">
-			  
-				<div class="content-md-left">
-				  
-				  <img src="{{asset("image/profilepic.jpg")}}">
-				  
-				</div>
-				
-				<div class="content-md-middle">
-				  
-				  <div class="post-title-name">
-					{{app.user.name}}
-			        {{app.user.email}}
-
-				  </div>
-				  
-				  <div class="post-title-time">
-					<a href="">Saturday 13:52</a>
-				  </div>
-				  
-				   <div class="post-desc">
-				    <p>  test test 105</p>
-					 <br>
-					 <img src='{{asset("image/pizzacover.jpg")}}'>
-					 
-				  </div>
-				  
-				  <div class="post-info">
-				  
-					<ul>
-					
-					  <li><a href="" class="like"><span class="entypo-thumbs-up"></span> Like</a></li>
-					  <li><a href="" class="comment"><span class="entypo-comment"></span> Comment</a></li>
-					  <li><a href="" class="share"><span class="entypo-share"></span> Share</a></li>
-					  
-					</ul>
-					  
-				  </div>
-				
-				</div>
-				
-			  </div>
-			  
-			  <div class="content-right">
-				
-				<ul>
-				  
-				  <li><a href=""><span class="entypo-chat"></span></a></li>
-				  <li><a href=""><span class="entypo-camera"></span></a></li>
-				  <li><a href=""><span class="entypo-export"></span></a></li>
-		  
-				  
-				</ul>
-				
-				
-			  </div>
-			  
-			  
-			</div>
-			
-			  
-		  </div>
-	   
-	   
 	</body>  
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="{{asset("profile.js")}}"></script>
