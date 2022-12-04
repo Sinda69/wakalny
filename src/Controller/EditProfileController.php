@@ -15,12 +15,12 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use Symfony\Component\HttpFoundation\Response;
-/**
-     * @Route("/profile", name="app_edit")
-     */
+
+   
+     
 class EditProfileController extends AbstractController
 {
-
+    #[Route('/profile', name: 'app_edit')]
     public function editProfile(Request $request)
     {
         $user = $this->getUser();
