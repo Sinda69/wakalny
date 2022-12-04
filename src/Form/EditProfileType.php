@@ -6,15 +6,16 @@ use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class EditProfileType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-        ->add('name', TextType::class)
-        ->add('password', TextType::class)   
-        ->add('modify', SubmitType::class) 
+        ->add('name')
+        ->add('password')   
+        ->add('save', SubmitType::class);
         ;
     }
 

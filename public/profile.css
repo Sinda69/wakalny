@@ -7,6 +7,11 @@
 body{
   background-image: url("image/coverr.jpg");
 }
+button{
+	background: #c9e6ff;
+	border: 0;
+	text-transform: uppercase;
+}
 nav{
   display: flex;
   align-items: center;
