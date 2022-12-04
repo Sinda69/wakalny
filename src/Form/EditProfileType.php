@@ -14,12 +14,7 @@ class EditProfileType extends AbstractType
     {
         $builder
         ->add('name')
-        ->add('password')   
-<<<<<<< HEAD
-        ->add('save', SubmitType::class);
-=======
-        ->add('modify') 
->>>>>>> b8c47390e1aa71386849a6e7fd9fc854e8a8bb66
+        ->add('save', SubmitType::class)
         ;
     }
 

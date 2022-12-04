@@ -1,12 +1,23 @@
 {% extends 'base.html.twig' %}
-
+{% block head %}
+<link rel="stylesheet" href="{{asset('acc_style.css')}}" type="text/css" />{% endblock %}
 {% block title %}profil de {{ app.user.name }}{% endblock %}
+    
 
 {% block body %}
-	<div>
-			<h1>Modification du profil de {{ app.user.name }}</h1>
+	<div class="container right-panel-active" id="container" >
+      <div class="form-container sign-up-container">
             {{ form(form) }}
-	</div>
+			 <div class="overlay-container">
+        <div class="overlay">
+
+          <div class="overlay-panel overlay-left">
+            	<h1>Modification du profil de {{ app.user.name }}</h1>
+          </div>
+        </div>
+		</div>
+      </div>
+    </div>
 
 {% endblock %}
      
